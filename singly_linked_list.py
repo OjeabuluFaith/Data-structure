@@ -29,9 +29,9 @@ class Node:
 
 class LinkedList:
     def __init__(self):
-        self.head = None  # head node... starting point
+        self.head = head   # head node... starting point
 
-# printing the information of each node
+# inserting an element 
 
     def print_LL(self):
         if self.head == None:
