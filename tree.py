@@ -26,7 +26,7 @@ class BinaryTree(object):
 
     def print_tree(self, traversal_type):
         if traversal_type == "preorder":
-            return self.preorder_print(tree.root, "")
+            return self.preorder_print(tree.root, "-git add")
         
         else:
             print("Trvaersal type" + str(traversal_type)+ "is not supported.")
