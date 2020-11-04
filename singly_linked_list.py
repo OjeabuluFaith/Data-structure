@@ -42,5 +42,4 @@ class LinkedList:
                 print (n.data)
                 n = n.next 
                 
-#adding/inserting element into the linkedlist 
 
