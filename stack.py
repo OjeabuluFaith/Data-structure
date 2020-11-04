@@ -19,7 +19,7 @@ class Stack(object):
 
    # putting a new element on the stack
 
-    def push(self, item = ''):
+    def push(self, item=''):
 
         self.item.append(item)
         pass
@@ -54,21 +54,18 @@ class Stack(object):
             return True
         else:
             return False
-        
+
 
 if __name__ == "__main__":
     stack = Stack()
-    
+
     stack.push("1")
     stack.push("2")
     print(stack.size())
     print(stack.peek())
-    
-    
-    
-    
+
     stack.pop()
     print(stack.size())
     print(stack.peek())
-    
+
     print(stack.isempty())

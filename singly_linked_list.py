@@ -3,18 +3,10 @@
 
 implementing SINGLY LINKED LIST  using OOP
 
--->access an el
--->add element
--->remove element
--->transerve
-
-
-"""traversing operation 
--->start with the head
--->access the data if head is not empty 
--->goto next node access node data 
--->continue until the last node
-
+-->create node
+-->create linkedlist 
+-->add node to linkedlist 
+-->print linkedlist 
 
 '''
 
@@ -24,22 +16,30 @@ implementing SINGLY LINKED LIST  using OOP
 class Node:
     def __init__(self, data):
         self.data = data
-        self.next = None  # storing the pointer to the next node
+        self.next = None  # since the pointer does not point to anything initially 
 
 
 class LinkedList:
     def __init__(self):
-        self.head = head   # head node... starting point
+        self.head = None   # head node... starting point
 
-# inserting an element 
+# inserting an element
 
-    def print_LL(self):
-        if self.head == None:
-            print("linked list is empty")
+    def insert(self,newNode):
+        if self.head is None:
+            self.head = newNode
         else:
-            n = self.head
-            while n is not None:
-                print (n.data)
-                n = n.next 
-                
+            
+            lastNode  = self.head
+            while True:
+                if lastNode.next is None:
+                    break
+                lastNode == lastNode.next
+            lastNode.next = newNode 
+            
+    def printList(self ):
+        
+        currentNode 
+                 
 
+# adding/inserting element into the linkedlist
